@@ -13,7 +13,7 @@ As we can see the second image path is more efficient than the first image as it
 ## Dependencies
 
 [1] FCL-0.5 (collision checking)\
-[2] OMPL -1.5 (Motion Planning)\
+[2] OMPL -1.2.1 (Motion Planning)\
 [3] ROS Kinetic (Mainly sensor fusion and Rviz)\
 
 
