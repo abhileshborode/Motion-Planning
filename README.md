@@ -30,6 +30,7 @@ rosrun path_planning path_planning
 
 ## TODO
 [1]Optimize the Planner using better statecost function and statesampler
+
 [2]Create a replanning node for online Plannning
   
 ## License 
