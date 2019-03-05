@@ -12,9 +12,9 @@ As we can see the second image path is more efficient than the first image as it
 
 ## Dependencies
 
-[1] FCL-0.5 (collision checking)
-[2] OMPL -1.5 (Motion Planning)
-[3] ROS Kinetic (Mainly sensor fusion and Rviz)
+[1] FCL-0.5 (collision checking)\
+[2] OMPL -1.5 (Motion Planning)\
+[3] ROS Kinetic (Mainly sensor fusion and Rviz)\
 
 
 ## Run Instructions
@@ -29,9 +29,9 @@ rosrun path_planning path_planning
 ```
 
 ## TODO
-[1]Optimize the Planner using better statecost function and statesampler
+[1]Optimize the Planner using better statecost function and statesampler\
 
-[2]Create a replanning node for online Plannning
+[2]Create a replanning node for online Plannning\
   
 ## License 
 
