@@ -191,13 +191,6 @@ ob::OptimizationObjectivePtr get2(const ob::SpaceInformationPtr& si)
 
 }
 
-ob::ValidStateSamplerPtr allocOBValidStateSampler(const ob::SpaceInformation *si)
-{
-    // we can perform any additional setup / configuration of a sampler here,
-    // but there is nothing to tweak in case of the ObstacleBasedValidStateSampler.
-    return std::make_shared<ob::MaximizeClearanceValidStateSampler>(si);
-}
-
 
 
 void plan(void)
