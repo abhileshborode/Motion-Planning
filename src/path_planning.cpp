@@ -81,21 +81,6 @@ bool isStateValid(const ob::State *state)
 }
 
 
-double penaliseZ(const ob::State* state) 
-    {
-        // We know we're working with a RealVectorStateSpace in this
-        // example, so we downcast state into the specific type.
-        const ob::RealVectorStateSpace::StateType* state3D =
-            state->as<ob::RealVectorStateSpace::StateType>();
-        double x = state3D->values[0];
-        double y = state3D->values[1];
-        double z = state3D->values[2];
-  
-        return sqrt((x*x + y*y + 1000*z*z));
-    }
-
-
-
 
 class Penz :  public ob::StateCostIntegralObjective
 {
@@ -333,7 +318,7 @@ void plan(void)
 		traj_pub.publish(msg);
 
 		// Clear memory
-		pdef->clearSolutionPaths();
+		//pdef->clearSolutionPaths();
 
 		
         //Path smoothing using bspline
@@ -414,8 +399,8 @@ void octomapCallback(const octomap_msgs::Octomap &msg)
 	fcl::CollisionObject temp((std::shared_ptr<fcl::CollisionGeometry>(tree)));
 	treeObj = temp;
 	plan();
+	
 
-	// ros::Duration(10).sleep(); //Plan once every ten seconds
 }
 
 int main(int argc, char **argv)
