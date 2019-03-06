@@ -1,4 +1,4 @@
-## path_planning
+## Path Planning Package
 A global Planner for a fly/drive concept vehicle in 3D Octomap environment. The Octomap can be created by a Lidar/Structured Light camera and saved in a .bt/.ot file. Since it is extremely power inefficient to fly in comparison to drive we always want our vehicle to drive unless absolutly necessary.
 
 ## Results
@@ -14,7 +14,7 @@ As we can see the second image path is more efficient than the first image as it
 
 [1] FCL-0.5 (collision checking)\
 [2] OMPL -1.2.1 (Motion Planning)\
-[3] ROS Kinetic (Mainly sensor fusion and Rviz)\
+[3] ROS Kinetic (Mainly sensor fusion and Rviz)
 
 
 ## Run Instructions
@@ -31,7 +31,7 @@ rosrun path_planning path_planning
 ## TODO
 [1]Optimize the Planner using better statecost function and statesampler\
 
-[2]Create a replanning node for online Plannning\
+[2]Create a replanning node for online Plannning
   
 ## License 
 
